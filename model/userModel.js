@@ -54,8 +54,7 @@ const userSchema = new mongoose.Schema({
 
 const setImageUrl = (doc) => {
     if (doc.avatar) {
-        // const imageUrl = `${process.env.BASE_URL}/users/${doc.avatar}`;
-        const imageUrl = `https://obnoxious-bernice-marwansalem-90080425.koyeb.app/users/${doc.avatar}`;
+        const imageUrl = `${process.env.BASE_URL}/users/${doc.avatar}`;
         doc.avatar = imageUrl;
     }
 };
